@@ -51,7 +51,7 @@ const MenuList = (props: props) => {
                                 </svg>
                             </button>
                         </div>
-                        <div className={`${expanded? "block" : "hidden"}`}>
+                        <div className={`${expanded && list.namesList.length !== 0? "block" : "hidden"}`}>
                             <span className="block h-[2px] w-full bg-line my-[4px]"></span>
                             <div className="block ml-[16px]">
                                 {list.namesList.map((name) => (
