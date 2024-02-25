@@ -1,0 +1,1 @@
+START "" /B npm run tauri dev

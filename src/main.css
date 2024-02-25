@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#root {
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.layout {
+    height: 100%;
+}
+
+@layer base {
+    :root {
+        --background-menu: #4d4d4d;
+        --background-notebook: #b3b3b3;
+        --background-preview: #ffffff;
+        --foreground-menu: #ffffff;
+    
+        --primary-foreground: #000000;
+
+        --primary-line: #ffffff;
+    
+        --menu-list-background: #666666;
+        --card-foreground: 213.6 100% 4.9%;
+    
+        --popover: 0 0% 100%;
+        --popover-foreground: 213.6 100% 4.9%;
+    
+        --secondary: 214.74 100% 92.55%;
+        --secondary-foreground: 216 100% 0.98%;
+    
+        --muted-primary: #999999;
+        --muted-secondary: #737373;
+        --muted-tertiary: #b3b3b3;
+        --muted-quaternary: #666666;
+    
+        --accent: 213.6 100% 95.1%;
+        --accent-foreground: 214.12 100% 50%;
+    
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 210 40% 98%;
+    
+        --border: 0 0% 90.2%;
+        --input: 0 0% 90.2%;
+        --ring: 214.12 100% 50%;
+    
+        --radius: 0.5rem;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "IBM Plex Serif", "Times New Roman", sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.17em;
+}
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: 0.83em;
+}
+h6 {
+    font-size: 0.67em;
+}
+
