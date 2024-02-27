@@ -1,9 +1,9 @@
-import Menu from "./views/menu";
-import Notebook from "./views/notebook";
-import Preview from "./views/preview";
+import Menu from "./views/menu-v";
+import Notebook from "./views/notebook-v";
+import Preview from "./views/preview-v";
 
 function layout() {
-
+  
   return (
     <div className="layout flex">
       <Menu className={`w-[200px] min-w-[200px] h-full bg-menu-background text-menu-foreground`} />

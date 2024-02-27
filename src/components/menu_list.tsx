@@ -1,34 +1,17 @@
-import { useRef, useState } from "react";
-import arrow_menu from "../assets/icons/arrow-menu.svg";
+import { menuList } from "../models";
+import { useState } from "react";
 
 interface props {
     className?: String;
 }
 
-const lists = [
-    {
-        head: "Notebooks",
-        namesList: ["All Notes", "Markdown", "Projects"]
-    },
-    {
-        head: "Subject",
-        namesList: []
-    },
-    {
-        head: "Status",
-        namesList: []
-    },
-    {
-        head: "Types",
-        namesList: []
-    }
-]
-
 const MenuList = (props: props) => {
     const { className } = props;
+    const menulist = new menuList();
+
     return(
         <div className={`menu-lists flex flex-col gap-[8px] ${className}`}>
-            {lists.map((list) => {
+            {menulist.get_list().map((list) => {
                 const [expanded, setExpand] = useState<boolean>(true);
                 const handleButton = () => {
                     setExpand(!expanded);
