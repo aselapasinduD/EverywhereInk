@@ -1,6 +1,14 @@
-# Tauri + React + Typescript
+# EverywhereInk
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+This is the app where you can write your notes with more control over the text.
+
+#### Features
+- [ ] Create notebooks
+- [ ] Create pages within notebooks
+- [ ] Group pages within notebooks with headline
+- [ ] Create tags
+- [ ] Add status to your pages
+- [ ] Export PDF as a page or group of pages or notebook
 
 ## Recommended IDE Setup
 

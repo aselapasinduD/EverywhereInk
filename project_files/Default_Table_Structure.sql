@@ -42,6 +42,7 @@ CREATE TABLE `tags` (
     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
     `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+INSERT INTO `tags`(`name`,`color`) VALUE ('Welcome', '#ff9955'),('EverywhereInk', '#5599ff');
 
 CREATE TABLE `pages` (
 	`id` BINARY(16) NOT NULL DEFAULT (UUID_TO_BIN(UUID())) PRIMARY KEY,
@@ -69,3 +70,4 @@ CREATE TABLE `pagestotags` (
     FOREIGN KEY (`pageId`) REFERENCES `pages`(`id`),
     FOREIGN KEY (`tagId`) REFERENCES `tags`(`id`)
 );
+INSERT INTO `pagestotags`(`pageId`,`tagId`) VALUES (UUID_TO_BIN('eb02a552-d624-11ee-87ff-40167e72e3ed'),UUID_TO_BIN('95f65a41-d626-11ee-87ff-40167e72e3ed'));
